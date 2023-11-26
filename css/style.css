@@ -256,6 +256,31 @@ header ul li:last-child{
     font-family: 'IAMAPLAYER';
     margin: 3vh auto;
     color: #788094;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 100%;
+        background: #F5BF48;
+        z-index: -1;
+        transition: width 150ms ease-in-out;
+    }
+
+    &:hover{
+        color: #fff;
+        &:after{
+            width: 110%;
+        }
+    }
 
 }
 
@@ -283,6 +308,7 @@ header ul li:last-child{
 .section3 .container .row .col-6>h5{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .section3 .container .row .tr{
