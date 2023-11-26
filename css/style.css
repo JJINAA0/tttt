@@ -303,11 +303,13 @@ footer .textF{
     justify-content: center;
     margin-left: 10vh;
     font-size: 1.3rem;
+    
 }
 
 footer .textF>h4{
     font-size: 4rem;
     margin-top: 5vh;
+    text-transform: uppercase;
 }
 
 footer span{
