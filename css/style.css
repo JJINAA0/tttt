@@ -52,6 +52,31 @@ a{
     text-decoration: none; color: inherit;
 }
 
+@media screen and (max-width:1199px) {
+
+    header ul li,
+    header h1{
+        width: 50%;
+    }
+
+    #top .slide {
+        height: 100%;
+    }
+
+    #top .slide .banner .left figure img,
+    #top .slide .banner .right{
+        width: 100%;
+        height: 100%;
+    }
+
+    .item .row {
+        width: 98%;
+    }
+
+}
+
+    
+
 header{
     height: 10vh;
     background-color: #000;
@@ -101,6 +126,8 @@ header ul li:last-child{
     position: relative;
 }
 
+
+
 #top .slide .banner .box .right{
     text-align: center;
     display: flex;
@@ -114,8 +141,9 @@ header ul li:last-child{
     font-family: 'Holtwood One SC', serif;
     font-size: 4rem;
     font-weight: 900;
-
 }
+
+
 
 #top .slide .banner .box .right>p{
     padding: 5vw;
@@ -126,13 +154,15 @@ header ul li:last-child{
 }
 
 #top .slide .banner .aa{
-    display: none;
+    position: absolute;
+    top: 10vh;
+    left: 0;
 }
 
 .section1{
     max-width: 1400px;
     margin: auto 20vw;
-    margin-top: 20vh;
+    margin-top: 50vw;
 }
 
 .section1 .movi>* {
@@ -156,11 +186,11 @@ header ul li:last-child{
 }
 
 .item{
-    display: flex;
-    flex-direction: column-reverse;
+    margin: auto;
     font-family: 'IAMAPLAYER';
     margin-bottom: 20vw;
 }
+
 
 .item .row .col-3 h4{
     color: #F5BF48;
@@ -172,11 +202,13 @@ header ul li:last-child{
     writing-mode: vertical-lr;
     text-align: center;
 }
+
 .item .row .mrT>p{
     font-family: 'akira';
     text-align: center;
     color: #F5BF48;
     text-shadow: 15px 18px 0px #000;
+    
 }
 
 .section2{
@@ -233,14 +265,52 @@ header ul li:last-child{
 }
 
 
+
 .section2 .container .row .col-4>h4{
     font-family: 'chang';
     font-size: 2.5rem;
-    margin-top: 12vh;
+    margin-top: 12vh;   
 }
-.section2 .container .row .col-8{
-    background-color: aquamarine;
+
+.section2 .container .row .TL>h4{
+    margin-left: 10vh;
+    text-align: right;
 }
+
+.section2 .container .row .col-8 figure{
+    max-width: 655px;
+    max-height: 413px;
+    margin-right: -20vh;
+}
+
+.section2 .container .row .right1 figure,
+.section2 .container .row .right2 figure,
+.section2 .container .row .left3 figure{
+    padding: 0 14vh;
+}
+
+.section2 .container .row .right1>h3{
+    margin-left: 40vh;
+    margin-top: 35vh;
+}
+
+.section2 .container .row .right2>h3{
+    margin-left: 52vh;
+    margin-top: 35vh;
+
+}
+
+.section2 .container .row .left3>h3{
+    margin-left: 49vh;
+    margin-top: 35vh;
+}
+
+.section2 .container .row .right3>h3,
+.section2 .container .row .left1>h3{
+    margin-top: 35vh;
+    margin-left: 5vh;
+}
+
 
 .section2 .container .row .col-4 button{
     border: 2px solid #F5BF48;
@@ -296,7 +366,10 @@ header ul li:last-child{
 .section3 .container .bar{
     background-color: #D9D9D9;
     height: 5vh;
-    padding: 0%;
+}
+
+.section3 .container .row{
+    max-width: 1110px;
 }
 
 
